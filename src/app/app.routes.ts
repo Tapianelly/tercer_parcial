@@ -18,11 +18,11 @@ export const routes: Routes = [
         children: [
           {
             path: 'log-in',
-            loadComponent: () => import('../../../streaming-app/src/app/components/Auth/log-in/log-in.component').then(m => m.LogInComponent)
+            loadComponent: () => import('@app/components/Auth/log-in/log-in.component').then(m => m.LogInComponent)
           },
           {
             path: 'sign-up',
-            loadComponent: () => import('../../../streaming-app/src/app/components/Auth/register/register.component').then(m => m.RegisterComponent)
+            loadComponent: () => import('@app/components/Auth/register/register.component').then(m => m.RegisterComponent)
           }
         ]
       }
