@@ -1,0 +1,3 @@
+<input type="file" (change)="onFileSelected($event)" />
+<progress [value]="uploadProgress" max="100"></progress>
+<p *ngIf="downloadURL | async as url">{{ url }}</p>
